@@ -1,15 +1,27 @@
 html {
+    //resets
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     font-size: 100%;
   }
   *, *::before, *::after {
+       //resets
     -webkit-box-sizing: inherit;
     -moz-box-sizing: inherit;
     box-sizing: inherit;
     }
-    body {
+    body  {
         margin: 0;
-        padding: 0;
+        padding-left: 11.25em; //180px
+        padding-right: 11.25em; //180px
+        
     }
+
+    li {
+        list-style-type: none;
+    }
+    a { 
+        text-decoration: none;
+    }
+   
