@@ -14,6 +14,14 @@ body {
   padding: 3.35em 11.25em 0px 11.25em;
 }
 
+h1, h2, h3 {
+  font-family: 'Merriweather', serif;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+}
+
 li {
   list-style-type: none;
 }
