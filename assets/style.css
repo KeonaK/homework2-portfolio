@@ -168,8 +168,22 @@ a {
   padding: 0 20em 0 20em;
 }
 
+.projects h2 {
+  display: block;
+  margin: 0 auto;
+}
+
+.projects .projects_container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (25%)[4];
+  -ms-grid-columns: 50% 50%;
+      grid-template: repeat(4, 25%)/50% 50%;
+  row-gap: 4em;
+}
+
 .contact {
   padding: 0 20em 0 20em;
-  background-color: white;
+  background-color: #998AF8;
 }
 /*# sourceMappingURL=style.css.map */
