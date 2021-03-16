@@ -30,6 +30,7 @@ li {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 .header {
@@ -75,8 +76,8 @@ a {
 .hero_container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 60% 40%;
-      grid-template-columns: 60% 40%;
+  -ms-grid-columns: 60% auto;
+      grid-template-columns: 60% auto;
 }
 
 .hero h1 {
@@ -94,6 +95,10 @@ a {
 
 .aboutme {
   background-color: white;
+  padding: 0 11.25em 0 11.25em;
+}
+
+.projects {
   padding: 0 11.25em 0 11.25em;
 }
 
