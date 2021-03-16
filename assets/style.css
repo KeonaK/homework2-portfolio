@@ -45,6 +45,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   font-size: 1.125em;
+  padding: 0 11.25em 0 11.25em;
 }
 
 .header_logo {
@@ -68,10 +69,14 @@ a {
 }
 
 .hero {
+  padding: 0 11.25em 0 11.25em;
+}
+
+.hero_container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 55% auto;
-      grid-template-columns: 55% auto;
+  -ms-grid-columns: 60% 40%;
+      grid-template-columns: 60% 40%;
 }
 
 .hero h1 {
@@ -82,11 +87,18 @@ a {
   color: #00D9C0;
 }
 
+.hero_arrow {
+  margin: 0 auto;
+  display: block;
+}
+
 .aboutme {
   background-color: white;
+  padding: 0 11.25em 0 11.25em;
 }
 
 .contact {
+  padding: 0 11.25em 0 11.25em;
   background-color: white;
 }
 /*# sourceMappingURL=style.css.map */
