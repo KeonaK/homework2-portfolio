@@ -1,5 +1,33 @@
 .aboutme{
     width: 100%;
-    background-color: white;
+    background-color: $purple;
+    color: white;
     padding: 0 20em 0 20em; //top right bottom left 
-}
+
+    &_container{
+        display: grid;
+        grid-template-columns: 50% auto;
+        gap: 10em;
+        font-size: 1rem;
+      
+
+        h2{
+            padding-top: 1em;
+            margin-bottom: 2em;
+        }
+
+        img{
+            margin-bottom: 5em;
+        }
+
+        p{
+            padding-bottom: 2em;
+        }
+
+        ul{
+            display: flex;
+            
+        }
+    }
+
+} 

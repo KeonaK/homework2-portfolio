@@ -15,10 +15,15 @@ body {
   background-color: #F9F9F9;
 }
 
-h1, h2, h3 {
+h1, h2 {
   margin: 0;
   font-family: 'Merriweather', serif;
   font-weight: bold;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #00D9C0;
 }
 
 p {
@@ -126,8 +131,37 @@ a {
 
 .aboutme {
   width: 100%;
-  background-color: white;
+  background-color: #998AF8;
+  color: white;
   padding: 0 20em 0 20em;
+}
+
+.aboutme_container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% auto;
+      grid-template-columns: 50% auto;
+  gap: 10em;
+  font-size: 1rem;
+}
+
+.aboutme_container h2 {
+  padding-top: 1em;
+  margin-bottom: 2em;
+}
+
+.aboutme_container img {
+  margin-bottom: 5em;
+}
+
+.aboutme_container p {
+  padding-bottom: 2em;
+}
+
+.aboutme_container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .projects {
