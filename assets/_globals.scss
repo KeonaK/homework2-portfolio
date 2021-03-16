@@ -12,16 +12,19 @@ html {
     box-sizing: inherit;
     }
     body  {
-        margin: 0;
-        padding: 3.35em 11.25em 0px 11.25em; //top right bottom left
+        padding: 0;
+        margin: 3.35em 11.25em 0px 11.25em; //top right bottom left
+        background-color: $gray;
         
     }
 
     h1, h2, h3 {
-        font-family: 'Merriweather', serif;;
+        font-family: 'Merriweather', serif;
+        font-weight: bold;
     }
     p{
     font-family: 'Montserrat', sans-serif;
+    
 }
     li {
         list-style-type: none;

@@ -10,12 +10,14 @@ html {
 }
 
 body {
-  margin: 0;
-  padding: 3.35em 11.25em 0px 11.25em;
+  padding: 0;
+  margin: 3.35em 11.25em 0px 11.25em;
+  background-color: #F9F9F9;
 }
 
 h1, h2, h3 {
   font-family: 'Merriweather', serif;
+  font-weight: bold;
 }
 
 p {
@@ -31,12 +33,62 @@ a {
 }
 
 .header {
+  position: fixed;
   width: 100%;
-  height: 45vh;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1em;
+  padding-bottom: 20em;
 }
 
 .header_logo {
-  height: 58px;
-  width: 58px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 3.625em;
+  width: 3.625em;
+}
+
+.header nav {
+  float: right;
+}
+
+.header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header nav ul a {
+  display: block;
+  padding: 0 2.5em;
+}
+
+.hero {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 60% 40%;
+      grid-template-columns: 60% 40%;
+  gap: 20px;
+}
+
+.hero h1 {
+  font-size: 80px;
+}
+
+.hero h1 span {
+  color: #00D9C0;
+}
+
+.aboutme {
+  background-color: white;
 }
 /*# sourceMappingURL=style.css.map */
