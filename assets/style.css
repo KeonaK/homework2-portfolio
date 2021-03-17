@@ -124,8 +124,8 @@ a {
   color: white;
   font-size: 2rem;
   border-radius: 10px;
-  -webkit-box-shadow: 5px 4px 8px 0px rgba(0, 0, 0, 0.23);
-          box-shadow: 5px 4px 8px 0px rgba(0, 0, 0, 0.23);
+  -webkit-box-shadow: 5px 4px 10px 0px rgba(0, 0, 0, 0.23);
+          box-shadow: 5px 4px 10px 0px rgba(0, 0, 0, 0.23);
   background-color: #998AF8;
 }
 
@@ -180,8 +180,17 @@ a {
 }
 
 .projects h2 {
-  display: block;
-  margin: 0 auto;
+  text-align: center;
+  margin: 4em;
+}
+
+.projects h3 {
+  color: #00D9C0;
+  font-size: 1.5rem;
+}
+
+.projects p {
+  margin-bottom: 3em;
 }
 
 .projects .projects_container {
@@ -193,18 +202,18 @@ a {
   row-gap: 4em;
 }
 
-.projects .projects_container_button {
-  height: 55px;
-  width: 260px;
+.projects .project_button {
+  height: 1.32em;
+  width: 2.7em;
   color: white;
-  font-size: 2rem;
+  font-size: 20px;
   border-radius: 10px;
-  -webkit-box-shadow: 5px 4px 8px 0px rgba(0, 0, 0, 0.6);
-          box-shadow: 5px 4px 8px 0px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 5px 4px 10px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 5px 4px 10px 0px rgba(0, 0, 0, 0.3);
   background-color: #998AF8;
 }
 
-.projects .projects_container_button a {
+.projects .project_button a {
   color: white;
 }
 
@@ -213,13 +222,18 @@ a {
   background-color: #998AF8;
 }
 
+.contact h2, .contact p {
+  text-align: center;
+  padding: 0 20em;
+  margin-bottom: 1em;
+}
+
 .contact form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  text-align: center;
+}
+
+.contact form button {
+  color: white;
+  background-color: #00D9C0;
 }
 /*# sourceMappingURL=style.css.map */

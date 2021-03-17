@@ -2,27 +2,38 @@
     padding: 0 20em 0 20em; //top right bottom left 
 
     h2{
-       display: block;
-       margin: 0 auto;
+       text-align: center;
+       margin: 4em;
     }
+
+    h3{
+        color: $turquoise;
+        font-size: 1.5rem;
+    }
+
+    p{
+        margin-bottom: 3em;
+    }
+
+    
     .projects_container{
         display: grid;
         grid-template: repeat(3, 1fr) / 50% 50%;
         row-gap: 4em;
+    }
     
-    
-    &_button{
-        height: 55px;
-        width: 260px;
+    .project_button{
+        height: 1.32em;
+        width: 2.7em;
         color: white;
-        font-size: 2rem;
+        font-size: 20px;
         border-radius: 10px;
-       box-shadow: 5px 4px 8px 0px rgba(0,0,0, .6);
+       box-shadow: 5px 4px 10px 0px rgba(0,0,0, .3);
         background-color: $purple;
         
         a{
             color: white;
         }
     }
-}
+    
 }
