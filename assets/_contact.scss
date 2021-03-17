@@ -2,5 +2,8 @@
     padding: 0 20em 0 20em; //top right bottom left 
     background-color: $purple;
 
-    
+    form{
+        display: flex;
+        flex-direction: column;
+    }
 }

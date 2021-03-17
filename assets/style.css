@@ -79,6 +79,15 @@ a {
 .header nav ul a {
   display: block;
   padding: 0 2.5em;
+  color: black;
+}
+
+.header nav ul a:hover {
+  color: #00D9C0;
+}
+
+.header nav ul a:active {
+  color: #998AF8;
 }
 
 .hero {
@@ -124,6 +133,10 @@ a {
   color: white;
 }
 
+.hero_button:hover {
+  opacity: .8;
+}
+
 .hero_arrow {
   margin: 0 auto;
   display: block;
@@ -159,9 +172,7 @@ a {
 }
 
 .aboutme_container ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  font-size: 1.5rem;
 }
 
 .projects {
@@ -176,14 +187,39 @@ a {
 .projects .projects_container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (25%)[4];
+  -ms-grid-rows: (1fr)[3];
   -ms-grid-columns: 50% 50%;
-      grid-template: repeat(4, 25%)/50% 50%;
+      grid-template: repeat(3, 1fr)/50% 50%;
   row-gap: 4em;
+}
+
+.projects .projects_container_button {
+  height: 55px;
+  width: 260px;
+  color: white;
+  font-size: 2rem;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 4px 8px 0px rgba(0, 0, 0, 0.6);
+          box-shadow: 5px 4px 8px 0px rgba(0, 0, 0, 0.6);
+  background-color: #998AF8;
+}
+
+.projects .projects_container_button a {
+  color: white;
 }
 
 .contact {
   padding: 0 20em 0 20em;
   background-color: #998AF8;
+}
+
+.contact form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 /*# sourceMappingURL=style.css.map */
