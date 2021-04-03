@@ -1,23 +1,20 @@
-.contact{
-    padding: 0 20em 0 20em; //top right bottom left 
-    background-color: $purple;
+.contact {
+  padding: 0 20em 0 20em; //top right bottom left
+  background-color: $purple;
 
-    h2, p{
-        text-align: center;
-        padding: 0 20em;
-        margin-bottom: 1em;
-       
+  h2,
+  p {
+    text-align: center;
+    // padding: 0 20em;
+    // margin-bottom: 1em;
+  }
+
+  form {
+    text-align: center;
+
+    button {
+      color: white;
+      background-color: $turquoise;
     }
-
-
-    form{
-
-       text-align: center;
-
-       button{
-           color: white;
-           background-color: $turquoise;
-
-       }
-    }
+  }
 }

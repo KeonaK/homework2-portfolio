@@ -222,10 +222,9 @@ a {
   background-color: #998AF8;
 }
 
-.contact h2, .contact p {
+.contact h2,
+.contact p {
   text-align: center;
-  padding: 0 20em;
-  margin-bottom: 1em;
 }
 
 .contact form {
