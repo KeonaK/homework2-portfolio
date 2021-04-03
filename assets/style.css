@@ -179,6 +179,11 @@ a {
   padding: 0 20em 0 20em;
 }
 
+.projects img {
+  height: 250px;
+  width: 250px;
+}
+
 .projects h2 {
   text-align: center;
   margin: 4em;
