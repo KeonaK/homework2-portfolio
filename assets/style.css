@@ -186,7 +186,7 @@ a {
 
 .projects h3 {
   color: #00D9C0;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .projects p {
@@ -203,8 +203,9 @@ a {
 }
 
 .projects .project_button {
-  height: 1.32em;
-  width: 2.7em;
+  height: 40px;
+  width: 200px;
+  margin: 5px;
   color: white;
   font-size: 20px;
   border-radius: 10px;
@@ -225,6 +226,8 @@ a {
 .contact h2,
 .contact p {
   text-align: center;
+  padding-top: 2em;
+  padding-bottom: 1em;
 }
 
 .contact form {
