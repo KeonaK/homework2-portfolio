@@ -1,32 +1,30 @@
-.aboutme{
-    width: 100%;
-    background-color: $purple;
-    color: white;
-    padding: 0 20em 0 20em; //top right bottom left 
+.aboutme {
+  width: 100%;
+  background-color: $purple;
+  color: white;
+  padding: 0 14em 0 14em; //top right bottom left
 
-    &_container{
-        display: grid;
-        grid-template-columns: 50% auto;
-        gap: 10em;
-        font-size: 1rem;
-      
+  &_container {
+    display: grid;
+    grid-template-columns: 50% auto;
+    gap: 10em;
+    font-size: 1rem;
 
-        h2{
-            padding-top: 1em;
-            margin-bottom: 2em;
-        }
-
-        img{
-            margin-bottom: 5em;
-        }
-
-        p{
-            padding-bottom: 2em;
-        }
-
-        ul{
-            font-size: 1.5rem;
-        }
+    h2 {
+      padding-top: 1em;
+      margin-bottom: 2em;
     }
 
-} 
+    img {
+      margin-bottom: 5em;
+    }
+
+    p {
+      padding-bottom: 2em;
+    }
+
+    ul {
+      font-size: 1.5rem;
+    }
+  }
+}
