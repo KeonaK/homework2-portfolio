@@ -105,7 +105,7 @@ a {
 }
 
 .hero h1 {
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
   font-size: 3.75rem;
 }
 
@@ -134,7 +134,7 @@ a {
 }
 
 .hero_button:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .hero_arrow {
@@ -235,12 +235,12 @@ a {
   padding-bottom: 1em;
 }
 
-.contact form {
-  text-align: center;
-}
-
-.contact form button {
-  color: white;
-  background-color: #00D9C0;
+.contact_icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=style.css.map */

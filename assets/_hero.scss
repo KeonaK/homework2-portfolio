@@ -1,105 +1,81 @@
-.header{
-    
-    width: 100%;
-    height: 10vh;
-    display: flex;
-    padding: 0 10em 0 20em; //top right bottom left 
-    justify-content: space-between;//puts nav links on the right side
-    align-items: center;
-    font-size: 1.125em;
-    
-    
-    
-    &_logo_container {
-      
-        height:  3.625em; //58px
-        width: 3.625em; //58px
-        
-        
+.header {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  padding: 0 10em 0 20em; //top right bottom left
+  justify-content: space-between; //puts nav links on the right side
+  align-items: center;
+  font-size: 1.125em;
 
+  &_logo_container {
+    height: 3.625em; //58px
+    width: 3.625em; //58px
+  }
+  nav {
+    float: right;
+
+    ul {
+      display: flex;
+
+      a {
+        display: block; // need block in order for padding to work
+        padding: 0 2.5em;
+        color: black;
+      }
+
+      a:hover {
+        color: $turquoise;
+      }
+
+      a:active {
+        color: $purple;
+      }
     }
-    nav{
-        float: right;
-       
-    ul{
-        display: flex;
-        
-        a{
-            display: block;// need block in order for padding to work
-            padding: 0 2.5em;
-            color: black;
-
-        }
-
-        a:hover{
-            color: $turquoise;
-        }
-
-        a:active{
-            color: $purple;
-        }
-    }
-
-    
-
-    
-    }
+  }
 }
 
+.hero {
+  padding: 0 20em 0 20em; //top right bottom left
 
+  &_container {
+    display: grid;
+    grid-template-columns: 60% auto;
+    align-items: center;
+  }
 
-.hero{
-
-  padding: 0 20em 0 20em; //top right bottom left 
-
- &_container{
-     display: grid;
-     grid-template-columns: 60% auto;
-     align-items: center;
-
-     
- }
-
- 
-
-    h1{
-       margin-bottom: .5em;
-        font-size: 3.75rem;
-        span{
-            color: $turquoise;
-        }
+  h1 {
+    margin-bottom: 0.5em;
+    font-size: 3.75rem;
+    span {
+      color: $turquoise;
     }
+  }
 
-    p{
-        
-        font-size: 1.5rem;
-        margin-bottom: 3em;
+  p {
+    font-size: 1.5rem;
+    margin-bottom: 3em;
+  }
+
+  &_button {
+    height: 55px;
+    width: 260px;
+    color: white;
+    font-size: 2rem;
+    border-radius: 10px;
+    box-shadow: 5px 4px 10px 0px rgba($color: #000000, $alpha: 0.23);
+    background-color: $purple;
+
+    a {
+      color: white;
     }
+  }
 
-    &_button{
-        height: 55px;
-        width: 260px;
-        color: white;
-        font-size: 2rem;
-        border-radius: 10px;
-        box-shadow: 5px 4px 10px 0px rgba($color: #000000, $alpha: .23);
-        background-color: $purple;
-        
-        a{
-            color: white;
-        }
-    }
+  &_button:hover {
+    opacity: 0.8;
+  }
 
-    &_button:hover{
-        opacity: .8;
-    }
-
-
-    &_arrow{
-        margin: 0 auto;
-        display: block;
-    }
-    
-
-
+  &_arrow {
+    margin: 0 auto;
+    display: block;
+  }
 }

@@ -8,13 +8,8 @@
     padding-top: 2em;
     padding-bottom: 1em;
   }
-
-  form {
-    text-align: center;
-
-    button {
-      color: white;
-      background-color: $turquoise;
-    }
+  &_icons {
+    display: flex;
+    justify-content: center;
   }
 }
