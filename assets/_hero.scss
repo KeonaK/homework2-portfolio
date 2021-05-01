@@ -1,67 +1,43 @@
-.header {
-  width: 100%;
-  height: 8vh;
-  display: flex;
-  padding: 0 14em 0 14em; //top right bottom left
-  justify-content: space-between; //puts nav links on the right side
-  align-items: center;
-  font-size: 1.125em;
-  background-color: white;
-
-  &_logo_container {
-    height: 3em; //58px
-    width: 3em; //58px
-  }
-  nav {
-    float: right;
-
-    ul {
-      display: flex;
-
-      a {
-        display: block; // need block in order for padding to work
-        padding: 0 2.5em;
-        color: black;
-      }
-
-      a:hover {
-        color: $turquoise;
-      }
-
-      a:active {
-        color: $purple;
-      }
-    }
-  }
-}
-
 .hero {
-  padding: 0 14em 0 14em; //top right bottom left
+  padding: $sidePadding;
 
-  &_container {
+  .hero_container {
+    height: 93vh;
     display: grid;
-    justify-items: center;
-    align-items: end;
-    // grid-template-columns: 60% auto;
-    grid-template-rows: 1fr 1fr;
-    padding-top: 14em;
-    height: 95vh;
-  }
+    grid-template-columns: repeat (2, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
 
-  h1 {
-    margin-bottom: 0.5em;
-    font-size: 3.75rem;
-    span {
-      color: $turquoise;
+    grid-template-areas:
+      "hero_text hero_image"
+      "hero_text hero_image"
+      "hero_arrow hero_arrow";
+
+    .hero_text {
+      grid-area: hero_text;
     }
-  }
+    .hero_image {
+      grid-area: hero_image;
+      justify-self: end;
+      align-self: center;
+    }
+    .hero_arrow {
+      grid-area: hero_arrow;
+    }
 
-  p {
-    font-size: 1.5rem;
-    margin-bottom: 3em;
-  }
+    img {
+      height: 580px;
+      width: 300px;
+    }
+    h2 {
+      > span {
+        color: $pink;
+      }
+    }
 
-  &_arrow {
-    margin-bottom: 1em;
+    a img {
+      height: 40px;
+      width: 40px;
+      margin-bottom: 1rem;
+    }
   }
 }

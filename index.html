@@ -5,25 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/style.css">
     <title>Keona Kirby | Web Developer</title>
 </head>
 <body>
     <!-- header section -->
     <header class="header" >
-        <div class="header_logo_container"> <a href="#hero_section">
-<img src="./assets/images/logo teal-02 2.svg" class="header_logo" alt="teal logo">
-</a>
-        </div>
         <nav>
-            <ul>
-                <li><a href="#aboutme_section">About</a></li>
-                <li><a href="#project_section">Projects</a></li>
-                <li><a href="#contact_section">Contact</a><li>
-                    <li><a href="./assets/images/Keona Kirby Resume - Word.docx.pdf" target="_blank"`>Resume</a></li>
-                
-            </ul>
+            
+              <a href="#hero_section" >
+             <img src="./assets/images/headerLogo.svg"  alt="logo">
+            </a>
+
+            <a  href="" class="header_mobile_menu hide-for-desktop"> 
+               <span></span>
+               <span></span>
+               <span></span>
+           </a>
+
+             <div class = " header_links hide-for-mobile">
+                 <a href="#aboutme_section">About</a>
+                 <a href="#project_section">Projects</a>
+                 <a href="#contact_section">Contact</a>
+                 <a href="./assets/images/Keona Kirby Resume - Word.docx.pdf" target="_blank">Resume</a>
+             </div>
+
+          
         </nav>
         
     </header>
@@ -31,15 +38,18 @@
     <section class = "hero" id="hero_section">
         <div class="hero_container">
             <div class="hero_text">
-                <h1>Hi, I'm Keona Kirby a <br><span class="hero_span">Web Developer </span> . </h1>
+
+                <h1>Hello!</h1>
+                <h2>I'm Keona Kirby a <br>
+                    <span>Web Developer </span> . </h2>
                 <p>Front-End Developer | Freelancer</p>
                 
             </div>
-            <!-- <div >
-                <img src="./assets/images/workingHero_image.svg"  class="hero_image"alt="woman hero image">
-            </div> -->
+            
+                <img src="./assets/images/heroImg.svg"  class="hero_image "alt="hero image">
+           
             <div > <a href="#aboutme_section">
-                <img src="./assets/images/down_arrow.svg" class="hero_arrow arrow_animation" alt="down arrow">
+                <img src="./assets/images/Vectorarrow.svg" class="hero_arrow arrow_animation" alt="down arrow">
                  </a>
             </div>
         </div>
@@ -54,21 +64,23 @@
                      
                     <img src="./assets/images/250x250.svg" alt="self image">
                     
-                    <p>Front-end web developer passionate about building responsive and accessible desktop and mobile web experiences with a familiarity in back-end technologies as well as best UI/UX practices. Earned a certification from Southern Methodist University in full stack development, learning technologies such as CSS, Javascript, MERN stack and more.
-                        By leveraging a background in finance, I am able to implement analytical problem solving and interpersonal skills that makes me a great addition to any team. I enjoy continuous learning as I challenge myself everyday to improve.
-                        
-                    </p>
-            </div>
-        
-        <div class="aboutme_skill">
-        <h2>Skills</h2>
-      <ul>
-          <li>Html</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>SASS</li>
-          <li>Figma</li>
-      </ul>
+                </div>
+                
+                <div class="aboutme_skill">
+                    <div class = "flex flex-w">
+                        <div class = "skills">Html</div>
+                            <div class = "skills">CSS</div class = "skills">
+                                <div class = "skills">Bootstrap</div>
+                                <div class = "skills">SASS</div>
+                                <div class="skills">JavaScript</div>
+                                <div class="skills">React</div>
+                            <div class = "skills">Figma</div>
+                            <div class = "skills">Animation</div>
+                        </div>
+                        <p>Front-end web developer passionate about building responsive and accessible desktop and mobile web experiences with a familiarity in back-end technologies as well as best UI/UX practices. Earned a certification from Southern Methodist University in full stack development, learning technologies such as CSS, Javascript, MERN stack and more.
+                            By leveraging a background in finance, I am able to implement analytical problem solving and interpersonal skills that makes me a great addition to any team. I enjoy continuous learning as I challenge myself everyday to improve.
+                            
+                        </p>
     </div>
 </div>
     </section>
@@ -82,9 +94,9 @@
         <div>
         <h3>Weather Dashboard</h3>
         <p>This project is a weather dashboard. Type in any city and it will display the current weather as well as a 5 day forcast.</p>
-        <button class="project_button btn"> <a target="_blank" href=" https://keonak.github.io/WeatherDashApp/">
+        <button class="project_button btn" type = "button"> <a target="_blank" href=" https://keonak.github.io/WeatherDashApp/">
             View Deployment</a></button>
-        <button class="project_button btn"> <a target="_blank" href="https://github.com/KeonaK/WeatherDashApp">
+        <button class="project_button btn" type = "button"> <a target="_blank" href="https://github.com/KeonaK/WeatherDashApp">
             View Repository</a></button>
     </div>
         
@@ -95,10 +107,10 @@
             <h3>Ambience Market Watch and Currency Exchange</h3>
             <p>This is a group project that is an application that combines different types of market data to allow users to make educated decisions on their future investments to their portfolios. With an ever-changing world where the dollar is becoming less used for international trading; we have also designed into the feature a currency exchange list for the most traded world currencies. Also, for the user’s convenience our team has introduced a currency exchange calculator to make conversions even easier. At the bottom of the application we have also included different commodities exchange pricing so that the user has a one stop shop to differing market portfolio options.</p>
 
-            <button class="project_button btn"> <a target="_blank" href="https://cgjones0711.github.io/Market-CE-Group/">
+            <button class="project_button btn" type = "button"> <a target="_blank" href="https://cgjones0711.github.io/Market-CE-Group/">
                 View Deployment</a></button>
 
-            <button class="project_button btn"> <a target="_blank" href="https://github.com/cgjones0711/Market-CE-Group">
+            <button class="project_button btn" type = "button"> <a target="_blank" href="https://github.com/cgjones0711/Market-CE-Group">
                 View Repository</a></button>
         </div>
         
@@ -108,8 +120,8 @@
         <div>
         <h3>Project 3</h3>
         <p>project description</p>
-        <button class="project_button btn">View Deployment</button>
-        <button class="project_button btn">View Repository</button>
+        <button class="project_button btn" type = "button"><a> View Deployment</a> </button>
+        <button class="project_button btn" type = "button"><a>View Repository</a></button>
     </div>
     </div>
     </section>

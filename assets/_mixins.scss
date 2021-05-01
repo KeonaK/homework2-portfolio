@@ -1,17 +1,15 @@
 //breakpoints
 
 @media (min-width: 64em) {
-  //styles go here
 }
 
-//this viewpoint and up
 //viewpoints used 640px, 1024px, 1400px
 $breakpoints-up: (
   "medium": "40em",
   "large": "64em",
   "xlarge": "87.5em",
 );
-//this viewpoint and down
+
 //viewpoints 639px, 1023px, 1399px (these are a pixel less so the styles do not overlap)
 $breakpoints-down: (
   "small": "39.9375em",
@@ -20,7 +18,9 @@ $breakpoints-down: (
 );
 
 @mixin breakpoints-up($size) {
+  //map-get: gets the value of the size passed in
   @media (min-width: map-get($breakpoints-up, $size)) {
+    //output content in the styles
     @content;
   }
 }

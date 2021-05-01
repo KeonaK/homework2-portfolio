@@ -1,12 +1,13 @@
 .contact {
-  padding: 0 14em 0 14em; //top right bottom left
-  background-color: $purple;
+  padding: 0 14rem 0 14rem; //top right bottom left
+  background-color: $darkBlue;
 
   h2,
   p {
+    color: white;
     text-align: center;
-    padding-top: 2em;
-    padding-bottom: 1em;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
   }
   &_icons {
     display: flex;
