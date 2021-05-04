@@ -186,59 +186,40 @@ a:hover {
 }
 
 .hero {
+  position: relative;
   padding: 0 14rem 0 14rem;
-}
-
-.hero .hero_container {
   height: 93vh;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: repeat 2, 1fr;
-      grid-template-columns: repeat 2, 1fr;
-  -ms-grid-rows: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
-      grid-template-areas: "hero_text hero_image" "hero_text hero_image" "hero_arrow hero_arrow";
 }
 
-.hero .hero_container .hero_text {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 1;
-  grid-area: hero_text;
+.hero_container {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.hero .hero_container .hero_image {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 2;
-  grid-area: hero_image;
-  -ms-grid-column-align: end;
-      justify-self: end;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
-.hero .hero_container .hero_arrow {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: hero_arrow;
-}
-
-.hero .hero_container img {
-  height: 580px;
-  width: 300px;
-}
-
-.hero .hero_container h2 > span {
+.hero_container h2 > span {
   color: #ff7373;
 }
 
-.hero .hero_container a img {
-  height: 40px;
-  width: 40px;
-  margin-bottom: 1rem;
+.hero_container img {
+  height: 800px;
+  width: 400px;
+}
+
+.hero_arrow {
+  position: absolute;
+  display: block;
+  left: 50%;
+  top: 90%;
+  height: 50px;
+  width: 50px;
 }
 
 .aboutme {

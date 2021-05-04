@@ -1,43 +1,33 @@
 .hero {
+  position: relative;
   padding: $sidePadding;
+  height: 93vh;
 
-  .hero_container {
-    height: 93vh;
-    display: grid;
-    grid-template-columns: repeat (2, 1fr);
-    grid-template-rows: 1fr 1fr 1fr;
+  &_container {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-    grid-template-areas:
-      "hero_text hero_image"
-      "hero_text hero_image"
-      "hero_arrow hero_arrow";
-
-    .hero_text {
-      grid-area: hero_text;
-    }
-    .hero_image {
-      grid-area: hero_image;
-      justify-self: end;
-      align-self: center;
-    }
-    .hero_arrow {
-      grid-area: hero_arrow;
-    }
-
-    img {
-      height: 580px;
-      width: 300px;
-    }
     h2 {
       > span {
         color: $pink;
       }
     }
-
-    a img {
-      height: 40px;
-      width: 40px;
-      margin-bottom: 1rem;
+    //hero image
+    img {
+      height: 800px;
+      width: 400px;
+      // padding-top: 2.5rem;
     }
+  }
+  //arrow image
+  &_arrow {
+    position: absolute;
+    display: block;
+    left: 50%;
+    top: 90%;
+    height: 50px;
+    width: 50px;
   }
 }
